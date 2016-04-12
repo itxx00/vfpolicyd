@@ -45,7 +45,7 @@ void logger_close();
     }                                                                       \
 } while (0)
 
-#define log_warn(...) do {                                                  \
+#define log_emerg(...) do {                                                  \
     if (logger_canlog(LOG_EMERG) != 0) {                                    \
         _log(__FILE__, __LINE__, 0, __VA_ARGS__);                           \
     }                                                                       \
