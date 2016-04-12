@@ -22,7 +22,7 @@ struct logger {
 
 // log functions
 void _log(const char * file, int line, int is_panic, const char * fmt, ...);
-void _log_err(const char * fmt, ...);
+void _log_stderr(const char * fmt, ...);
 int  logger_init(int level, char * name);
 void logger_close();
 
